@@ -1,14 +1,14 @@
-# Nerfies
+# Resource-Efficient Multiview Perception
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [Resource-Efficient Multiview Perception website](https://kostadakic.github.io/).
 
 If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@inproceedings{dakic2025MAE,
+      title = {Resource-Efficient Multiview Perception: Integrating Semantic Masking with Masked Autoencoders}, 
+      author = {Kosta Dakic and Kanchana Thilakarathna and Rodrigo N. Calheiros and Teng Joon Lim},
+      year = {2025},
+      booktitle ={2025 IEEE International Conference on Pervasive Computing and Communications (PerCom)}
 }
 ```
 
