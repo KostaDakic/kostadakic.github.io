@@ -67,7 +67,7 @@
                         <div class="publication-links">
                             <!-- PDF Link. -->
                             <span class="link-block">
-                <a href="./static/pdf/06294.pdf"
+                <a href="https://arxiv.org/pdf/2410.04817"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -76,16 +76,7 @@
                 </a>
               </span>
                             <span class="link-block">
-                <a href="./static/pdf/06294-supp.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supplementary</span>
-                </a>
-              </span>
-                            <span class="link-block">
-                <a href="https://arxiv.org/abs/2312.03298"
+                <a href="https://arxiv.org/abs/2410.04817"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -93,16 +84,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-                            <!-- Code Link. -->
-                            <span class="link-block">
-                <a href="https://github.com/TyraelDLee/DiffPMAE"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+
                         </div>
 
                     </div>
@@ -117,9 +99,10 @@
         <div class="hero-body">
             <img src="static/images/Fig1.png" alt="fig1">
             <h2 class="subtitle has-text-centered">
-                <span class="dnerf">DiffPMAE</span> inference process: MAE module first segments the point cloud to
-                visible and masked regions and provides latent code for visible patches which is taken as a conditional
-                input for the Diffusion process.
+                <span class="dnerf">System model of the proposed distributed multiview pedestrian detection and tracking framework. 
+                    Multiple cameras capture images, which are resized and undergo semantic-guided masking before wireless transmission. 
+                    The received masked images are processed by an MAE with an encoder-decoder architecture. 
+                    The reconstructed images are then fed into a combined detection and tracking module, producing both detection and tracking outputs for the observed targets.
             </h2>
         </div>
     </div>
@@ -133,30 +116,15 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Point cloud streaming is increasingly getting popular,
-                        evolving into the norm for interactive service delivery and the future Metaverse.
-                    </p>
-                    <p>
-                        However, the substantial volume of data associated with point clouds presents numerous
-                        challenges,
-                        particularly in terms of high bandwidth consumption and large storage capacity.
-                        Despite various solutions proposed thus far, with a focus on point cloud compression,
-                        upsampling, and completion, these reconstruction-related methods continue to fall short in
-                        delivering
-                        high fidelity point cloud output.
-                    </p>
-                    <p>
-                        As a solution, in <span class="dnerf">DiffPMAE</span>, we propose an effective point cloud
-                        reconstruction architecture. Inspired by self-supervised learning concepts, we combine Masked
-                        Auto-Encoding
-                        and Diffusion Model mechanism to remotely reconstruct point cloud data. By the nature of this
-                        reconstruction
-                        process, <span class="dnerf">DiffPMAE</span> can be extended to many related downstream tasks
-                        including point cloud compression,
-                        upsampling and completion. Leveraging ShapeNet-55 and ModelNet datasets with over 60000 objects,
-                        we validate the performance of <span class="dnerf">DiffPMAE</span> exceeding many
-                        state-of-the-art methods in-terms of auto-encoding
-                        and downstream tasks considered. We will release source code upon acceptance of the paper.
+                        Multiview systems have become a key technology in modern computer vision, offering advanced capabilities in scene understanding and analysis. 
+                        However, these systems face critical challenges in bandwidth limitations and computational constraints, particularly for resource-limited camera nodes. 
+                        This paper presents a novel approach for communication-efficient distributed multiview detection and tracking using masked autoencoders (MAEs). 
+                        We introduce a semantic-guided masking strategy that leverages pre-trained segmentation models and a tunable power function to prioritize informative image regions. 
+                        This approach, combined with an MAE, reduces communication overhead while preserving essential visual information. 
+                        
+                        We evaluate our method on both virtual and real-world multiview datasets, demonstrating comparable performance in terms of detection and tracking performance metrics compared to state-of-the-art techniques, even at high masking ratios. 
+                        Our selective masking algorithm outperforms random masking, maintaining higher accuracy and precision as the masking ratio increases. 
+                        Furthermore, our approach achieves a significant reduction in transmission data volume compared to baseline methods, thereby balancing multiview tracking performance with communication efficiency.
                     </p>
                 </div>
             </div>
