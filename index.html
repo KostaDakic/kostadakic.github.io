@@ -99,10 +99,7 @@
         <div class="hero-body">
             <img src="static/images/Fig1.png" alt="fig1">
             <h2 class="subtitle has-text-centered">
-                <span class="dnerf">System model of the proposed distributed multiview pedestrian detection and tracking framework. 
-                    Multiple cameras capture images, which are resized and undergo semantic-guided masking before wireless transmission. 
-                    The received masked images are processed by an MAE with an encoder-decoder architecture. 
-                    The reconstructed images are then fed into a combined detection and tracking module, producing both detection and tracking outputs for the observed targets.
+                <span class="dnerf">
             </h2>
         </div>
     </div>
@@ -129,17 +126,6 @@
                 </div>
             </div>
         </div>
-        <!--/ Abstract. -->
-
-
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">Model Structure</h2>
-                <div class="structure">
-                    <img src="static/images/structure.png" alt="structure">
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -153,9 +139,10 @@
 
           <div class="content has-text-justified">
             <p>
-              We segment the input point cloud object into visible patches (pink) and masked patches (grey),
-              the diffusion model will generate the masked patches guided by visible patches.
-              Use the slider here to explore the diffusion process on masked region.
+              System model of the proposed distributed multiview pedestrian detection and tracking framework. 
+                    Multiple cameras capture images, which are resized and undergo semantic-guided masking before wireless transmission. 
+                    The received masked images are processed by an MAE with an encoder-decoder architecture. 
+                    The reconstructed images are then fed into a combined detection and tracking module, producing both detection and tracking outputs for the observed targets.
             </p>
           </div>
           <div class="columns is-vcentered interpolation-panel">
